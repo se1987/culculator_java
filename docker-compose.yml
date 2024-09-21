@@ -1,0 +1,9 @@
+version: "3.6"
+services:
+  java:
+    build: ./backend
+    ports:
+      - 8080:8080
+    tty: true
+    volumes:
+      - ./backend/src:/usr/src:cached
